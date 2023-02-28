@@ -1,1 +1,43 @@
-<p>afficher works!</p>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <h1>table des tips</h1>
+            <div class="border rounded p-3">
+                <div class="form-group row">
+                    <label for="input1" class="col-sm-2 col-form-label">Input 1:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" #input1 placeholder="Entrez votre texte ici..."
+                            (input)="sendtofather(input1.value)">
+                    </div>
+                </div>
+                <div class=" form-group row">
+                    <label for="input2" class="col-sm-2 col-form-label">Input 2:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" #input2 placeholder="Entrez votre texte ici..."
+                            (input)="sendtofather(input2.value)">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="input3" class="col-sm-2 col-form-label">Input 3:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" #input3 placeholder="Entrez votre texte ici..."
+                            (input)="sendtofather(input3.value)">
+                    </div>
+                </div>
+                <hr>
+                <div class="form-group row">
+                    <label for="output1" class="col-sm-2 col-form-label">Output 1:</label>
+                    <div class="col-sm-10">
+                        <output class="form-control" id="output1">Résultat 1</output>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="output2" class="col-sm-2 col-form-label">Output 2:</label>
+                    <div class="col-sm-10">
+                        <output class="form-control" id="output2">Résultat 2</output>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
