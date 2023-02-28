@@ -1,2 +1,4 @@
-<app-afficher (SendRequestToFather)="reponse($event)" (SendRequestToFather2)="reponse2($event)"></app-afficher>
-<app-inserer [prix]="prix" [tips]="tips" (SendRequestToFather)="reponse($event)"></app-inserer>
+<app-afficher (SendRequestToFather)="reponse($event)" (SendRequestToFather2)="reponse2($event)"
+  (SendRequestToFather3)="reponse3($event)"></app-afficher>
+<app-inserer [prix]="prix" [tips]="tips" [nbrpersonne]="nbrpersonne"
+  (SendRequestToFather)="reponse($event)"></app-inserer>

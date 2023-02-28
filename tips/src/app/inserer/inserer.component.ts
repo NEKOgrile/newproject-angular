@@ -19,8 +19,9 @@ export class InsererComponent{
 general : number = 0;
 
 ngOnChanges() {
-  this.reponse(this.prix , this.tips);
+  this.tipspersonne(this.prix , this.tips , this.nbrpersonne);
 }
+
 
 
 sendtofather()
@@ -30,8 +31,8 @@ sendtofather()
     //this.SendRequestToFather.emit(this.nbrpersonne);
   }
 
-  reponse(prix: any , tips : any) {
-    this.nbrpersonne = parseInt(prix, 10) + parseInt(tips, 10);
+  tipspersonne(prix: any , tips : any , nbrpersonne : any) {
+    this.nbrpersonne = parseInt(prix, 10) + parseInt(tips, 10) +  parseInt(nbrpersonne, 10);
   }
 }
 
